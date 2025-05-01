@@ -1,4 +1,4 @@
-# Exp.No:23  
+# Exp.No:5E 
 ## Multiple Inheritance
 
 ---
@@ -32,14 +32,33 @@ To write a Python program to get the name, attendance, and ID of a student and c
 ### PROGRAM
 
 ```
-
+class A:
+def get(self):
+self.a = input()
+self.b = int(input())
+self.c = int(input())
+class B:
+def check(self):
+if self.c > 90:
+print("Eligible for Placement")
+else:
+print("Not Eligible for Placement")
+class C(A,B):
+def display(self):
+A.get(self)
+print(self.a)
+print(self.b)
+B.check(self)
+ob = C()
+ob.display()
 ```
 
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/be6a681b-150f-4cfe-b81a-6b144306dba1)
 
 
 ### RESULT
-
+Thus , the given python program is implemented and executed sucessfully.
 
 
 
